@@ -29,6 +29,12 @@ function get(reqUrl) {
   return { status: 404, type: 'text/plain; charset=utf-8', body: Buffer.from('Not found') };
 }
 
+function respond(res, status, text) {
+  // text is always an internal constant; never user or exception content.
+  res.writeHead(status, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+  res.end(text);
+}
+
 const server = http.createServer((req, res) => {
   if (req.method === 'GET') {
     const r = get(req.url);
@@ -41,34 +47,31 @@ const server = http.createServer((req, res) => {
     req.on('data', (c) => (body += c));
     req.on('end', () => {
       let data;
-      try { data = JSON.parse(body); } catch (e) { res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('bad json'); return; }
-      const action = (req.headers['x-action'] || '').toLowerCase();
+      try { data = JSON.parse(body); } catch (e) { return respond(res, 400, 'bad json'); }
+      const action = String(req.headers['x-action'] || '').toLowerCase();
+      // Only the two known actions are accepted; everything else is refused.
+      if (action !== 'save' && action !== 'deploy') { return respond(res, 400, 'unknown action'); }
+      // Shape guard: never write arbitrary input; only well-formed products data.
+      if (!data || typeof data !== 'object' || !Array.isArray(data.categories) || !Array.isArray(data.products)) {
+        return respond(res, 400, 'invalid data shape');
+      }
       try {
-        // Shape guard: never write arbitrary input; only well-formed products data.
-        if (!data || typeof data !== 'object' || !Array.isArray(data.categories) || !Array.isArray(data.products)) {
-          res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('invalid data shape'); return;
-        }
-        if (action === 'save') {
-          fs.writeFileSync(PROD, JSON.stringify(data, null, 2));
-          res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('saved products.json');
-          return;
-        }
+        fs.writeFileSync(PROD, JSON.stringify(data, null, 2));
         if (action === 'deploy') {
-          fs.writeFileSync(PROD, JSON.stringify(data, null, 2));
           execFileSync('git', ['-C', ROOT, 'add', '-A'], { stdio: 'inherit' });
           execFileSync('git', ['-C', ROOT, '-c', 'core.quotepath=false', 'commit', '-m', 'Update via admin tool', '--no-verify'], { stdio: 'inherit' });
           execFileSync('git', ['-C', ROOT, 'push', 'origin', 'main'], { stdio: 'inherit' });
-          res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('saved + pushed to GitHub (Cloudflare deploy started)');
-          return;
+          return respond(res, 200, 'saved + pushed to GitHub (Cloudflare deploy started)');
         }
-        res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('unknown action');
+        return respond(res, 200, 'saved products.json');
       } catch (e) {
-        res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end('server error: ' + String(e.message).replace(/[<>&\"']/g, ''));
+        console.error('Admin error:', e && e.message);
+        return respond(res, 500, 'server error');
       }
     });
     return;
   }
-  res.writeHead(405); res.end();
+  res.writeHead(405, { 'Content-Type': 'text/plain; charset=utf-8' }); res.end();
 });
 
 server.listen(PORT, () => console.log('Admin running: http://127.0.0.1:' + PORT));
