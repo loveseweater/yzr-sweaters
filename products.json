@@ -1,0 +1,122 @@
+{
+  "categories": [
+    { "id": "sweaters", "name": "Sweaters & Pullovers", "slug": "sweaters-pullovers" },
+    { "id": "cardigans", "name": "Cardigans & Knit Jackets", "slug": "cardigans" },
+    { "id": "dresses", "name": "Knitted Dresses", "slug": "knitted-dresses" },
+    { "id": "polos", "name": "Knitted Polos", "slug": "knitted-polos" },
+    { "id": "scarves", "name": "Scarves & Wraps", "slug": "scarves-wraps" },
+    { "id": "beanies", "name": "Beanies & Hats", "slug": "beanies-hats" },
+    { "id": "gloves", "name": "Gloves & Mittens", "slug": "gloves-mittens" },
+    { "id": "legwear", "name": "Legwarmers & Socks", "slug": "legwarmers-socks" }
+  ],
+  "products": [
+    {
+      "id": "knit-polo-olive",
+      "name": "V-Neck Knitted Polo — Olive",
+      "category": "sweaters",
+      "image": "/images/product-polo-green.jpg",
+      "desc": "Short-sleeve knit polo in a soft textured yarn, relaxed fit and ribbed cuffs.",
+      "tags": ["men", "unisex", "textured yarn"],
+      "featured": true
+    },
+    {
+      "id": "knit-polo-khaki",
+      "name": "V-Neck Knitted Polo — Khaki",
+      "category": "polos",
+      "image": "/images/product-polo-khaki.jpg",
+      "desc": "Warm khaki knit polo, relaxed fit. We match any Pantone and adjust yarn weight.",
+      "tags": ["men", "unisex"],
+      "featured": true
+    },
+    {
+      "id": "knit-polo-ivory",
+      "name": "V-Neck Knitted Polo — Ivory",
+      "category": "polos",
+      "image": "/images/product-polo-white.jpg",
+      "desc": "Clean ivory knit polo in a soft textured yarn with ribbed cuffs. A timeless base layer.",
+      "tags": ["men", "unisex", "cream"],
+      "featured": true
+    },
+    {
+      "id": "halter-dress-wine",
+      "name": "Halter-Neck Knit Dress — Wine",
+      "category": "dresses",
+      "image": "/images/product-dress-wine.jpg",
+      "desc": "Close-fit ribbed knit dress with a halter neckline and tie detail.",
+      "tags": ["women", "event"],
+      "featured": true
+    },
+    {
+      "id": "halter-dress-caramel",
+      "name": "Halter-Neck Knit Dress — Caramel Block",
+      "category": "dresses",
+      "image": "/images/product-halter-caramel.jpg",
+      "desc": "Bold color-block knit dress in caramel and white with a high halter neckline.",
+      "tags": ["women", "statement"],
+      "featured": true
+    },
+    {
+      "id": "halter-dress-sage",
+      "name": "Halter-Neck Rib Knit Dress — Sage",
+      "category": "dresses",
+      "image": "/images/product-halter-green.jpg",
+      "desc": "Soft sage green ribbed knit dress with a halter neckline and tie detail.",
+      "tags": ["women", "capsule"],
+      "featured": true
+    },
+    {
+      "id": "tank-coral-stripe",
+      "name": "Layered Knit Tank — Coral Stripe",
+      "category": "sweaters",
+      "image": "/images/product-dress-orange.jpg",
+      "desc": "Colorful knitted tank with a wave pattern in orange, pink and white.",
+      "tags": ["women", "summer", "resort"],
+      "featured": false
+    },
+    {
+      "id": "tank-blue",
+      "name": "Wavy Stripe Knit Tank — Blue",
+      "category": "sweaters",
+      "image": "/images/product-tank-blue.jpg",
+      "desc": "Fresh wavy-stripe knitted tank in white, sky blue and grey. Lightweight and breathable.",
+      "tags": ["women", "summer"],
+      "featured": false
+    },
+    {
+      "id": "poncho-cream",
+      "name": "Fringed Knit Poncho — Cream",
+      "category": "cardigans",
+      "image": "/images/product-knit-poncho-cream.jpg",
+      "desc": "Relaxed, loose-stitch knit poncho with a fringed hem. Cozy layer for all seasons.",
+      "tags": ["women", "layer", "one-size"],
+      "featured": true
+    },
+    {
+      "id": "beanie-olive",
+      "name": "Rib Knit Beanie — Black",
+      "category": "beanies",
+      "image": "/images/blog-fw-olive-jacket-beanie.jpg",
+      "desc": "A classic rib-knit beanie in black. Soft, warm and unisex — pairs with any winter look.",
+      "tags": ["unisex", "winter", "knit"],
+      "featured": true
+    },
+    {
+      "id": "scarf-blue",
+      "name": "Chunky Knit Scarf — Blue",
+      "category": "scarves",
+      "image": "/images/blog-fw-blue-layer-scarf.jpg",
+      "desc": "A chunky knit scarf in soft blue. Oversized, cozy and made for layering.",
+      "tags": ["unisex", "winter", "chunky"],
+      "featured": false
+    },
+    {
+      "id": "scarf-pink",
+      "name": "Wool Scarf — Pink",
+      "category": "scarves",
+      "image": "/images/blog-fw-pink-coat-scarf.jpg",
+      "desc": "A soft wool scarf with a tonal pattern. Elegant and warm for the colder season.",
+      "tags": ["women", "wool", "winter"],
+      "featured": false
+    }
+  ]
+}
