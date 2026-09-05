@@ -210,6 +210,26 @@
     .social a{color:rgba(244,237,226,.7);transition:color .2s;display:inline-flex}
     .social a:hover{color:#fff}
     .social svg{width:20px;height:20px;stroke:currentColor}
+
+    /* ===== Subscribe modal ===== */
+    .modal-overlay{position:fixed;inset:0;background:rgba(20,16,12,.62);backdrop-filter:blur(3px);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+    .modal-overlay.show{opacity:1;visibility:visible}
+    .modal{background:var(--white);border-radius:10px;max-width:440px;width:100%;padding:38px 34px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.28);text-align:center}
+    .modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:26px;line-height:1;color:var(--ink-soft);cursor:pointer;padding:4px}
+    .modal-close:hover{color:var(--ink)}
+    .modal .m-eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--wool-dark);font-weight:600;margin-bottom:12px}
+    .modal h3{font-family:var(--serif);font-size:24px;margin-bottom:12px;color:var(--ink)}
+    .modal p{font-size:15px;color:var(--ink-soft);margin-bottom:22px}
+    .modal input{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:6px;font-size:15px;font-family:var(--sans);color:var(--ink);margin-bottom:14px;background:#fff}
+    .modal input::placeholder{color:#a89f92}
+    .modal input:focus{outline:none;border-color:var(--wool)}
+    .modal .m-btn{width:100%;padding:13px;background:var(--wool);color:#fff;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s}
+    .modal .m-btn:hover{background:var(--wool-dark)}
+    .modal .m-note{font-size:12.5px;color:#a89f92;margin-top:12px}
+    .modal .m-success{display:none;padding:6px 0}
+    .modal .m-success svg{width:44px;height:44px;stroke:var(--wool-dark);margin:0 auto 14px}
+    .modal.done .m-form{display:none}
+    .modal.done .m-success{display:block}
   </style>
 </head>
 <body>
@@ -552,6 +572,62 @@
       <div class="copyright">© 2026 Dongguan Yu Zhengrong Garment Trading Co., Ltd. All rights reserved.</div>
     </div>
   </footer>
+
+  <!-- ============ Subscribe modal ============ -->
+  <div class="modal-overlay" id="subscribe-overlay">
+    <div class="modal" id="subscribe-modal" role="dialog" aria-modal="true" aria-label="Newsletter signup">
+      <button class="modal-close" aria-label="Close" onclick="closeSubscribe()">&times;</button>
+      <div class="m-form">
+        <p class="m-eyebrow">Knitwear Insights</p>
+        <h3>Get seasonal knitwear trends &amp; supplier tips</h3>
+        <p>Join our list for new styles, yarn guides and sourcing advice. No spam — unsubscribe anytime.</p>
+        <form id="subscribe-form">
+          <input type="email" id="subscribe-email" placeholder="Your email address" required>
+          <button type="submit" class="m-btn">Subscribe</button>
+          <p class="m-note">We respect your inbox.</p>
+        </form>
+      </div>
+      <div class="m-success">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+        <h3>You're on the list!</h3>
+        <p>Thanks for subscribing — we'll be in touch with seasonal knitwear updates.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function closeSubscribe(){
+      document.getElementById('subscribe-overlay').classList.remove('show');
+      try{localStorage.setItem('yzr_sub_closed','1');}catch(e){}
+    }
+    function showSubscribe(){
+      document.getElementById('subscribe-overlay').classList.add('show');
+    }
+    (function(){
+      var opened = false;
+      function maybeOpen(){
+        if(opened) return;
+        opened = true;
+        try{
+          if(localStorage.getItem('yzr_sub_closed')) return;
+        }catch(e){}
+        setTimeout(showSubscribe, 3500);
+      }
+      // Open once a good while after visit (if not already closed/subscribed)
+      setTimeout(maybeOpen, 3500);
+      document.getElementById('subscribe-form').addEventListener('submit', function(ev){
+        ev.preventDefault();
+        var email = document.getElementById('subscribe-email').value.trim();
+        var subject = encodeURIComponent('Newsletter signup from yzrsweaters.com');
+        var body = encodeURIComponent('Please subscribe this email to your newsletter:\n\n' + email);
+        window.location.href = 'mailto:daniel@yzrsweaters.com?subject=' + subject + '&body=' + body;
+        var m = document.getElementById('subscribe-modal');
+        m.classList.add('done');
+        try{localStorage.setItem('yzr_sub_closed','1');}catch(e){}
+        setTimeout(closeSubscribe, 2500);
+      });
+    })();
+  </script>
 
 </body>
 </html>
