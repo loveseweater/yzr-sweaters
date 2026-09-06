@@ -1,0 +1,68 @@
+/* ===== YZR Sweaters - shared inner-page styles ===== */
+/* Used by inner pages (capabilities, about, contact). Reuses site palette. */
+
+/* Page hero banner */
+.page-hero{background:var(--cream-2);border-bottom:1px solid var(--line);padding:60px 0}
+.page-hero .eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--wool-dark);margin-bottom:14px;font-weight:600}
+.page-hero h1{font-family:var(--serif);font-size:38px;line-height:1.2;font-weight:700;margin-bottom:14px}
+.page-hero p{color:var(--ink-soft);font-size:17px;max-width:660px}
+
+/* Content blocks */
+.page-block{padding:60px 0}
+.page-block .wrap{max-width:960px}
+.page-block h2{font-family:var(--serif);font-size:28px;font-weight:700;margin-bottom:16px}
+.page-block h3{font-family:var(--serif);font-size:20px;margin:24px 0 10px;font-weight:600}
+.page-block p{color:var(--ink-soft);font-size:16.5px;margin-bottom:16px}
+.page-block ul,.page-block ol{margin:0 0 18px 22px;color:var(--ink)}
+.page-block li{margin-bottom:8px;color:var(--ink-soft)}
+
+/* Breadcrumb */
+.breadcrumb{font-size:13px;color:var(--ink-soft);padding:22px 0 0}
+.breadcrumb a{color:var(--wool-dark)}
+.breadcrumb a:hover{color:var(--rust)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+.contact-side h2{font-family:var(--serif);font-size:24px;margin-bottom:14px}
+.c-list{list-style:none;padding:0}
+.c-list li{margin-bottom:16px;color:var(--ink-soft);font-size:15px}
+.c-list a{color:var(--wool-dark);text-decoration:underline}
+.contact-form{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:32px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:14px;color:var(--ink-soft);margin-bottom:6px}
+.field input,.field textarea,.field select{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:6px;font-size:15px;font-family:var(--sans);color:var(--ink);background:#fff}
+.field textarea{min-height:110px;resize:vertical}
+.contact-form .btn-primary{width:100%;margin-top:4px;border:none;cursor:pointer}
+.form-note{font-size:13px;color:var(--ink-soft);margin-top:12px;text-align:center}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+/* Feature / capability cards */
+.feature-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.feature{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:28px}
+.feature .num{font-family:var(--serif);font-size:15px;color:var(--wool-dark);margin-bottom:14px}
+.feature h3{font-family:var(--serif);font-size:19px;margin-bottom:8px}
+.feature p{color:var(--ink-soft);font-size:15px;margin-bottom:0}
+.feature ul{list-style:none;margin-top:12px;padding:0}
+.feature li{color:var(--ink-soft);font-size:14.5px;padding:5px 0;position:relative;padding-left:19px}
+.feature li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:50%;background:var(--wool)}
+@media(max-width:900px){.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.feature-grid{grid-template-columns:1fr}}
+
+/* Value / stat */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.stat{text-align:center;padding:22px;border:1px solid var(--line);border-radius:8px;background:var(--white)}
+.stat .big{font-family:var(--serif);font-size:30px;line-height:1;color:var(--wool-dark)}
+.stat .lbl{font-size:13px;color:var(--ink-soft);margin-top:8px}
+@media(max-width:600px){.stat-grid{grid-template-columns:1fr}}
+
+/* Process steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step{border-top:2px solid var(--wool);padding-top:18px}
+.step .no{font-family:var(--serif);font-size:22px;color:var(--wool-dark);margin-bottom:8px}
+.step h3{font-family:var(--serif);font-size:17px;margin-bottom:6px}
+.step p{font-size:14.5px;color:var(--ink-soft);margin-bottom:0}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* Section separators */
+.section-alt{background:var(--white)}

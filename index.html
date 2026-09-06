@@ -241,19 +241,18 @@
   <!-- ============ Header ============ -->
   <header>
     <div class="wrap nav">
-      <a href="#" class="brand" aria-label="YZR Sweaters home">
+      <a href="/" class="brand" aria-label="YZR Sweaters home">
         <img src="/images/logo.png" alt="YZR Sweaters logo">
         <span class="name">YZR Sweaters</span>
       </a>
       <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
       <nav class="nav-links">
-        <a href="#products">Products</a>
-        <a href="/products">Product Range</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
+        <a href="/" class="active">Home</a>
+        <a href="/products">Products</a>
+        <a href="/capabilities">Capabilities</a>
+        <a href="/about">About</a>
         <a href="/blog">Blog</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        <a href="/contact" class="btn btn-primary">Get a Quote</a>
       </nav>
     </div>
   </header>
@@ -265,8 +264,8 @@
       <h1>Custom sweaters &amp; knitted garments, made for your brand</h1>
       <p class="lead">YZR Sweaters is an OEM/ODM knitwear factory producing sweaters, cardigans, pullovers, polo knits and knitted dresses for fashion brands, wholesalers and online retailers — with flexible yarn, color and label options.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Start Your Project</a>
-        <a href="#products" class="btn btn-ghost">Browse Products</a>
+        <a href="/contact" class="btn btn-primary">Start Your Project</a>
+        <a href="/products" class="btn btn-ghost">Browse Products</a>
       </div>
     </div>
   </section>
@@ -572,12 +571,12 @@
         </div>
       </div>
       <nav class="foot-links">
-        <a href="#products">Products</a>
+        <a href="/products">Products</a>
         <a href="/products">Product Range</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
+        <a href="/capabilities">Capabilities</a>
+        <a href="/capabilities">Process</a>
         <a href="/blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="/contact">Contact</a>
       </nav>
       <div class="copyright">© 2026 Dongguan Yu Zhengrong Garment Trading Co., Ltd. All rights reserved.</div>
     </div>
@@ -641,6 +640,50 @@
 
 
 <script data-goatcounter="https://yzrsweaters.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yzrsweaters.com/#org",
+      "name": "Dongguan Yu Zhengrong Garment Trading Co., Ltd.",
+      "url": "https://yzrsweaters.com/",
+      "logo": "https://yzrsweaters.com/images/logo.png",
+      "email": "daniel@yzrsweaters.com",
+      "telephone": "+86 137 2449 4230",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dongguan", "addressRegion": "Guangdong", "addressCountry": "CN" },
+      "description": "Dongguan knitwear manufacturer producing OEM/ODM sweaters, cardigans and knitted garments for fashion brands, wholesalers and online retailers.",
+      "sameAs": [
+        "https://www.facebook.com/lovesweatercom/",
+        "https://www.instagram.com/yzrcashmere/",
+        "https://www.linkedin.com/in/yzrca/",
+        "https://www.tiktok.com/@yzrca",
+        "https://www.pinterest.com/Yzrcashmere/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yzrsweaters.com/#website",
+      "url": "https://yzrsweaters.com/",
+      "name": "YZR Sweaters",
+      "publisher": { "@id": "https://yzrsweaters.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is your minimum order quantity (MOQ)?", "acceptedAnswer": { "@type": "Answer", "text": "MOQ depends on the style and yarn. We keep it flexible and can often accommodate lower quantities for your first order or for sampling." } },
+        { "@type": "Question", "name": "Can you work from a design or reference photo?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We develop samples from a sketch, reference photo, competitor sample, or a full tech pack." } },
+        { "@type": "Question", "name": "Do you do private label and custom packaging?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We add your brand labels, hang tags and custom packaging to fit your retail or ecommerce requirements." } },
+        { "@type": "Question", "name": "What yarns and materials can you work with?", "acceptedAnswer": { "@type": "Answer", "text": "We work with wool, cashmere blends, acrylic, cotton, viscose and custom blends." } },
+        { "@type": "Question", "name": "What are your lead times for sampling and bulk?", "acceptedAnswer": { "@type": "Answer", "text": "Sampling and production time vary by style, quantity and season. We confirm a clear schedule when the order is placed." } },
+        { "@type": "Question", "name": "How do I get a quote?", "acceptedAnswer": { "@type": "Answer", "text": "Send your style, target quantity, yarn preference and packaging requirements via the form or by email. We reply with a quote and timeline." } }
+      ]
+    }
+  ]
+}
+</script>
 
 </body>
 </html>
