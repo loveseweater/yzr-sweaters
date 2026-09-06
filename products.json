@@ -1,13 +1,45 @@
 {
   "categories": [
-    { "id": "sweaters", "name": "Sweaters & Pullovers", "slug": "sweaters-pullovers" },
-    { "id": "cardigans", "name": "Cardigans & Knit Jackets", "slug": "cardigans" },
-    { "id": "dresses", "name": "Knitted Dresses", "slug": "knitted-dresses" },
-    { "id": "polos", "name": "Knitted Polos", "slug": "knitted-polos" },
-    { "id": "scarves", "name": "Scarves & Wraps", "slug": "scarves-wraps" },
-    { "id": "beanies", "name": "Beanies & Hats", "slug": "beanies-hats" },
-    { "id": "gloves", "name": "Gloves & Mittens", "slug": "gloves-mittens" },
-    { "id": "legwear", "name": "Legwarmers & Socks", "slug": "legwarmers-socks" }
+    {
+      "id": "sweaters",
+      "name": "Sweaters & Pullovers",
+      "slug": "sweaters-pullovers"
+    },
+    {
+      "id": "cardigans",
+      "name": "Cardigans & Knit Jackets",
+      "slug": "cardigans"
+    },
+    {
+      "id": "dresses",
+      "name": "Knitted Dresses",
+      "slug": "knitted-dresses"
+    },
+    {
+      "id": "polos",
+      "name": "Knitted Polos",
+      "slug": "knitted-polos"
+    },
+    {
+      "id": "scarves",
+      "name": "Scarves & Wraps",
+      "slug": "scarves-wraps"
+    },
+    {
+      "id": "beanies",
+      "name": "Beanies & Hats",
+      "slug": "beanies-hats"
+    },
+    {
+      "id": "gloves",
+      "name": "Gloves & Mittens",
+      "slug": "gloves-mittens"
+    },
+    {
+      "id": "legwear",
+      "name": "Legwarmers & Socks",
+      "slug": "legwarmers-socks"
+    }
   ],
   "products": [
     {
@@ -16,8 +48,18 @@
       "category": "sweaters",
       "image": "/images/product-polo-white.jpg",
       "desc": "A clean ivory knit polo with ribbed cuffs. A timeless, versatile layer.",
-      "tags": ["men", "unisex", "classic"],
-      "featured": true
+      "tags": [
+        "men",
+        "unisex",
+        "classic"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Ivory, White",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "knit-polo-khaki",
@@ -25,8 +67,18 @@
       "category": "sweaters",
       "image": "/images/product-polo-khaki.jpg",
       "desc": "A warm khaki knit polo with a relaxed fit. Easy to match any Pantone.",
-      "tags": ["men", "unisex", "neutral"],
-      "featured": true
+      "tags": [
+        "men",
+        "unisex",
+        "neutral"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Khaki",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "knit-polo-olive",
@@ -34,8 +86,17 @@
       "category": "sweaters",
       "image": "/images/product-polo-green.jpg",
       "desc": "A soft olive knit polo in textured yarn with ribbed cuffs.",
-      "tags": ["men", "unisex"],
-      "featured": false
+      "tags": [
+        "men",
+        "unisex"
+      ],
+      "featured": false,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Olive Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "mustard-chunky-knit",
@@ -43,8 +104,17 @@
       "category": "sweaters",
       "image": "/images/blog-fw-mustard-sweater.jpg",
       "desc": "A warm, on-trend mustard chunky knit. Cozy and oversized for fall.",
-      "tags": ["women", "trend"],
-      "featured": true
+      "tags": [
+        "women",
+        "trend"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Mustard",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "cable-cream-knit",
@@ -52,8 +122,18 @@
       "category": "sweaters",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "A timeless chunky cable-knit sweater with a soft, relaxed feel.",
-      "tags": ["women", "classic", "winter"],
-      "featured": false
+      "tags": [
+        "women",
+        "classic",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Cream",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "cream-crew-knit",
@@ -61,8 +141,17 @@
       "category": "sweaters",
       "image": "/images/blog-fw-cream-sweater-yellow.jpg",
       "desc": "A soft cream crew-neck knit, easy to style for any season.",
-      "tags": ["women", "classic"],
-      "featured": false
+      "tags": [
+        "women",
+        "classic"
+      ],
+      "featured": false,
+      "material": "Wool, cashmere blends, acrylic, cotton or viscose",
+      "colors": "Cream",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib, cable or jacquard knit"
     },
     {
       "id": "knit-poncho-cream",
@@ -70,8 +159,18 @@
       "category": "cardigans",
       "image": "/images/product-knit-poncho-cream.jpg",
       "desc": "A relaxed, loose-stitch knit poncho with a fringed hem.",
-      "tags": ["women", "layer", "one-size"],
-      "featured": true
+      "tags": [
+        "women",
+        "layer",
+        "one-size"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic or cotton",
+      "colors": "Cream",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib or cable knit"
     },
     {
       "id": "blue-layer-coat",
@@ -79,8 +178,18 @@
       "category": "cardigans",
       "image": "/images/blog-fw-blue-layer-scarf.jpg",
       "desc": "A chic layered knit coat in soft blue with a matching scarf.",
-      "tags": ["women", "autumn", "street"],
-      "featured": false
+      "tags": [
+        "women",
+        "autumn",
+        "street"
+      ],
+      "featured": false,
+      "material": "Wool, cashmere blends, acrylic or cotton",
+      "colors": "Blue",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib or cable knit"
     },
     {
       "id": "pink-wool-coat",
@@ -88,8 +197,17 @@
       "category": "cardigans",
       "image": "/images/blog-fw-pink-coat-scarf.jpg",
       "desc": "An elegant wool knit coat in soft pink with a tonal scarf.",
-      "tags": ["women", "winter"],
-      "featured": true
+      "tags": [
+        "women",
+        "winter"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic or cotton",
+      "colors": "Pink",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib or cable knit"
     },
     {
       "id": "olive-knit-jacket",
@@ -97,8 +215,18 @@
       "category": "cardigans",
       "image": "/images/blog-fw-olive-jacket-beanie.jpg",
       "desc": "A casual knit jacket in olive with a matching knit beanie.",
-      "tags": ["unisex", "street", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "street",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Wool, cashmere blends, acrylic or cotton",
+      "colors": "Olive Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib or cable knit"
     },
     {
       "id": "wine-cocoon-coat",
@@ -106,8 +234,17 @@
       "category": "cardigans",
       "image": "/images/blog-fw-winter-coat-knit.jpg",
       "desc": "A chic wine cocoon coat over a cream knit. Statement layering.",
-      "tags": ["women", "statement"],
-      "featured": true
+      "tags": [
+        "women",
+        "statement"
+      ],
+      "featured": true,
+      "material": "Wool, cashmere blends, acrylic or cotton",
+      "colors": "Wine Red",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey, rib or cable knit"
     },
     {
       "id": "halter-dress-wine",
@@ -115,8 +252,17 @@
       "category": "dresses",
       "image": "/images/product-dress-wine.jpg",
       "desc": "A close-fit ribbed knit dress with a halter neckline and tie.",
-      "tags": ["women", "event"],
-      "featured": true
+      "tags": [
+        "women",
+        "event"
+      ],
+      "featured": true,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Wine Red",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "halter-dress-sage",
@@ -124,8 +270,17 @@
       "category": "dresses",
       "image": "/images/product-halter-green.jpg",
       "desc": "A soft sage ribbed knit dress with a halter neckline.",
-      "tags": ["women", "capsule"],
-      "featured": false
+      "tags": [
+        "women",
+        "capsule"
+      ],
+      "featured": false,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Sage Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "halter-dress-sage2",
@@ -133,8 +288,17 @@
       "category": "dresses",
       "image": "/images/product-halter-sage.jpg",
       "desc": "A ribbed knit halter dress in sage green, elegant and on-trend.",
-      "tags": ["women", "summer"],
-      "featured": false
+      "tags": [
+        "women",
+        "summer"
+      ],
+      "featured": false,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Sage Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "halter-dress-coral",
@@ -142,8 +306,17 @@
       "category": "dresses",
       "image": "/images/product-halter-coral.jpg",
       "desc": "A vibrant coral knit halter dress, light and breathable.",
-      "tags": ["women", "summer"],
-      "featured": true
+      "tags": [
+        "women",
+        "summer"
+      ],
+      "featured": true,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Coral",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "colorblock-dress-black",
@@ -151,8 +324,17 @@
       "category": "dresses",
       "image": "/images/product-dress-black.jpg",
       "desc": "A bold color-block knitted dress with a high halter neckline.",
-      "tags": ["women", "statement"],
-      "featured": true
+      "tags": [
+        "women",
+        "statement"
+      ],
+      "featured": true,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Black",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "colorblock-dress-caramel",
@@ -160,8 +342,17 @@
       "category": "dresses",
       "image": "/images/product-halter-caramel2.jpg",
       "desc": "A caramel-and-white color-block knit dress, modern and chic.",
-      "tags": ["women", "statement"],
-      "featured": false
+      "tags": [
+        "women",
+        "statement"
+      ],
+      "featured": false,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Caramel",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib, jersey or pointelle knit"
     },
     {
       "id": "knit-polo-ivory2",
@@ -169,8 +360,17 @@
       "category": "polos",
       "image": "/images/product-polo-white2.jpg",
       "desc": "A clean ivory knit polo, a wardrobe essential for any line.",
-      "tags": ["men", "unisex"],
-      "featured": true
+      "tags": [
+        "men",
+        "unisex"
+      ],
+      "featured": true,
+      "material": "Cotton, viscose, acrylic or wool blends",
+      "colors": "Ivory, White",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey or rib knit"
     },
     {
       "id": "knit-polo-olive2",
@@ -178,8 +378,17 @@
       "category": "polos",
       "image": "/images/product-polo-olive2.jpg",
       "desc": "A textured olive knit polo with a relaxed, ribbed finish.",
-      "tags": ["men", "unisex"],
-      "featured": false
+      "tags": [
+        "men",
+        "unisex"
+      ],
+      "featured": false,
+      "material": "Cotton, viscose, acrylic or wool blends",
+      "colors": "Olive Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey or rib knit"
     },
     {
       "id": "knit-polo-khaki2",
@@ -187,8 +396,17 @@
       "category": "polos",
       "image": "/images/product-polo-khaki.jpg",
       "desc": "A warm khaki knit polo, seasonless and easy to match.",
-      "tags": ["men", "unisex"],
-      "featured": false
+      "tags": [
+        "men",
+        "unisex"
+      ],
+      "featured": false,
+      "material": "Cotton, viscose, acrylic or wool blends",
+      "colors": "Khaki",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey or rib knit"
     },
     {
       "id": "tank-blue",
@@ -196,8 +414,17 @@
       "category": "polos",
       "image": "/images/product-tank-blue.jpg",
       "desc": "A fresh wavy-stripe knitted tank in white, sky blue and grey.",
-      "tags": ["women", "summer"],
-      "featured": true
+      "tags": [
+        "women",
+        "summer"
+      ],
+      "featured": true,
+      "material": "Cotton, viscose, acrylic or wool blends",
+      "colors": "Blue",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey or rib knit"
     },
     {
       "id": "tank-green",
@@ -205,8 +432,17 @@
       "category": "polos",
       "image": "/images/product-tank-green.jpg",
       "desc": "A wavy-stripe knit tank in green, white and grey tones.",
-      "tags": ["women", "summer"],
-      "featured": false
+      "tags": [
+        "women",
+        "summer"
+      ],
+      "featured": false,
+      "material": "Cotton, viscose, acrylic or wool blends",
+      "colors": "Green",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey or rib knit"
     },
     {
       "id": "scarf-blue",
@@ -214,8 +450,18 @@
       "category": "scarves",
       "image": "/images/blog-fw-blue-layer-scarf.jpg",
       "desc": "A chunky knit scarf in soft blue, oversized and cozy.",
-      "tags": ["unisex", "winter", "chunky"],
-      "featured": true
+      "tags": [
+        "unisex",
+        "winter",
+        "chunky"
+      ],
+      "featured": true,
+      "material": "Wool, acrylic or cotton knit",
+      "colors": "Blue",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "scarf-pink",
@@ -223,8 +469,18 @@
       "category": "scarves",
       "image": "/images/blog-fw-pink-coat-scarf.jpg",
       "desc": "A soft wool scarf with a tonal pattern, elegant and warm.",
-      "tags": ["women", "wool", "winter"],
-      "featured": false
+      "tags": [
+        "women",
+        "wool",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Wool, acrylic or cotton knit",
+      "colors": "Pink",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "scarf-fringed-cream",
@@ -232,8 +488,17 @@
       "category": "scarves",
       "image": "/images/product-knit-poncho-cream.jpg",
       "desc": "A fringed knit wrap in cream that doubles as a cozy layer.",
-      "tags": ["women", "one-size"],
-      "featured": false
+      "tags": [
+        "women",
+        "one-size"
+      ],
+      "featured": false,
+      "material": "Wool, acrylic or cotton knit",
+      "colors": "Cream",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "scarf-mustard",
@@ -241,8 +506,18 @@
       "category": "scarves",
       "image": "/images/blog-fw-mustard-sweater.jpg",
       "desc": "A warm mustard knit scarf, a bright accent for winter outfits.",
-      "tags": ["unisex", "winter", "trend"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter",
+        "trend"
+      ],
+      "featured": false,
+      "material": "Wool, acrylic or cotton knit",
+      "colors": "Mustard",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "scarf-grey",
@@ -250,8 +525,17 @@
       "category": "scarves",
       "image": "/images/blog-fw-sand-knit-guitar.jpg",
       "desc": "A soft rib knit scarf in grey, a classic neutral for any look.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Wool, acrylic or cotton knit",
+      "colors": "Grey",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "beanie-olive",
@@ -259,8 +543,18 @@
       "category": "beanies",
       "image": "/images/blog-fw-olive-jacket-beanie.jpg",
       "desc": "A classic rib-knit beanie in black, warm and unisex.",
-      "tags": ["unisex", "winter", "knit"],
-      "featured": true
+      "tags": [
+        "unisex",
+        "winter",
+        "knit"
+      ],
+      "featured": true,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Black",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "beanie-cream",
@@ -268,8 +562,17 @@
       "category": "beanies",
       "image": "/images/blog-fw-cream-sweater-yellow.jpg",
       "desc": "A soft knit beanie in cream, a cozy staple for cold days.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Cream",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "beanie-navy",
@@ -277,8 +580,17 @@
       "category": "beanies",
       "image": "/images/blog-fw-winter-coat-knit.jpg",
       "desc": "A navy knit beanie with a pom, playful and warm.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Navy",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "beanie-beret",
@@ -286,8 +598,17 @@
       "category": "beanies",
       "image": "/images/blog-fw-knit-lace-dress.jpg",
       "desc": "A classic knit beret for a timeless, chic winter look.",
-      "tags": ["women", "winter"],
-      "featured": false
+      "tags": [
+        "women",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "beanie-charcoal",
@@ -295,8 +616,17 @@
       "category": "beanies",
       "image": "/images/blog-fw-olive-jacket-beanie.jpg",
       "desc": "A cuffed knit beanie in charcoal, relaxed and unisex.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Charcoal",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib or chunky knit"
     },
     {
       "id": "gloves-wool",
@@ -304,8 +634,17 @@
       "category": "gloves",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Warm knit gloves to coordinate with your sweater collection.",
-      "tags": ["unisex", "winter"],
-      "featured": true
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": true,
+      "material": "Acrylic, wool or fleece knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "gloves-touch",
@@ -313,8 +652,17 @@
       "category": "gloves",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Knit gloves with touchscreen fingertips, practical and warm.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or fleece knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "gloves-mittens",
@@ -322,8 +670,17 @@
       "category": "gloves",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Cozy chunky knit mittens, a classic cold-weather essential.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or fleece knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "gloves-fleece",
@@ -331,8 +688,17 @@
       "category": "gloves",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Knit gloves with a soft fleece lining for extra warmth.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or fleece knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "gloves-knit-blue",
@@ -340,8 +706,17 @@
       "category": "gloves",
       "image": "/images/blog-fw-blue-layer-scarf.jpg",
       "desc": "A soft knit glove in blue, a warm and colorful winter pick.",
-      "tags": ["unisex", "winter"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or fleece knit",
+      "colors": "Blue",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "legwarmers-knit",
@@ -349,8 +724,17 @@
       "category": "legwear",
       "image": "/images/blog-fw-sand-knit-guitar.jpg",
       "desc": "Rib knit legwarmers for a cozy, layered winter look.",
-      "tags": ["women", "winter"],
-      "featured": true
+      "tags": [
+        "women",
+        "winter"
+      ],
+      "featured": true,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "legwarmers-tall",
@@ -358,8 +742,17 @@
       "category": "legwear",
       "image": "/images/blog-fw-sand-knit-guitar.jpg",
       "desc": "Extra-long knit legwarmers for a fashion-forward winter look.",
-      "tags": ["women", "winter"],
-      "featured": false
+      "tags": [
+        "women",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "winter-socks",
@@ -367,8 +760,17 @@
       "category": "legwear",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Warm wool socks to keep feet cozy through the cold season.",
-      "tags": ["unisex", "winter"],
-      "featured": true
+      "tags": [
+        "unisex",
+        "winter"
+      ],
+      "featured": true,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "summer-socks",
@@ -376,8 +778,17 @@
       "category": "legwear",
       "image": "/images/blog-fw-cable-knit-flatlay.jpg",
       "desc": "Lightweight knit socks for everyday comfort.",
-      "tags": ["unisex", "everyday"],
-      "featured": false
+      "tags": [
+        "unisex",
+        "everyday"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Customizable (any Pantone color)",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     },
     {
       "id": "legwarmers-grey",
@@ -385,8 +796,17 @@
       "category": "legwear",
       "image": "/images/blog-fw-sand-knit-guitar.jpg",
       "desc": "A soft grey rib legwarmer, easy to pair with any outfit.",
-      "tags": ["women", "winter"],
-      "featured": false
+      "tags": [
+        "women",
+        "winter"
+      ],
+      "featured": false,
+      "material": "Acrylic, wool or cotton knit",
+      "colors": "Grey",
+      "sizing": "One size fits most",
+      "moq": "Flexible — small batches welcome",
+      "leadtime": "Sample 7–10 days, bulk 25–35 days",
+      "craft": "Rib knit"
     }
   ]
 }

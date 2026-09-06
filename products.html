@@ -86,6 +86,7 @@
 
 <script>
   // Data-driven product rendering with per-category anchors.
+  function esc(x){ return (x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function renderAll(data){
     var html = '';
     var shown = new Set();
@@ -97,7 +98,7 @@
       html += '<div class="prod-grid">';
       items.forEach(function(p){
         shown.add(p.id);
-        html += '<div class="prod-card"><img src="'+p.image+'" alt="'+p.name+'" loading="lazy"><div class="prod-info"><span class="prod-tag">'+p.tags.join(' · ')+'</span><h3>'+p.name+'</h3><p>'+p.desc+'</p></div></div>';
+        html += '<a class="prod-card" href="/product?id='+p.id+'" style="display:block;text-decoration:none;color:inherit"><img src="'+p.image+'" alt="'+esc(p.name)+'" loading="lazy"><div class="prod-info"><span class="prod-tag">'+p.tags.join(' · ')+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.desc)+'</p></div></a>';
       });
       html += '</div></div>';
     });
