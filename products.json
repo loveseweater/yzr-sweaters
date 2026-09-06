@@ -236,6 +236,24 @@
       "featured": false
     },
     {
+      "id": "scarf-mustard",
+      "name": "Knit Scarf — Mustard",
+      "category": "scarves",
+      "image": "/images/blog-fw-mustard-sweater.jpg",
+      "desc": "A warm mustard knit scarf, a bright accent for winter outfits.",
+      "tags": ["unisex", "winter", "trend"],
+      "featured": false
+    },
+    {
+      "id": "scarf-grey",
+      "name": "Rib Knit Scarf — Grey",
+      "category": "scarves",
+      "image": "/images/blog-fw-sand-knit-guitar.jpg",
+      "desc": "A soft rib knit scarf in grey, a classic neutral for any look.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
       "id": "beanie-olive",
       "name": "Rib Knit Beanie — Black",
       "category": "beanies",
@@ -254,6 +272,33 @@
       "featured": false
     },
     {
+      "id": "beanie-navy",
+      "name": "Pom Beanie — Navy",
+      "category": "beanies",
+      "image": "/images/blog-fw-winter-coat-knit.jpg",
+      "desc": "A navy knit beanie with a pom, playful and warm.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
+      "id": "beanie-beret",
+      "name": "Knit Beret — Classic",
+      "category": "beanies",
+      "image": "/images/blog-fw-knit-lace-dress.jpg",
+      "desc": "A classic knit beret for a timeless, chic winter look.",
+      "tags": ["women", "winter"],
+      "featured": false
+    },
+    {
+      "id": "beanie-charcoal",
+      "name": "Cuffed Beanie — Charcoal",
+      "category": "beanies",
+      "image": "/images/blog-fw-olive-jacket-beanie.jpg",
+      "desc": "A cuffed knit beanie in charcoal, relaxed and unisex.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
       "id": "gloves-wool",
       "name": "Wool Knit Gloves",
       "category": "gloves",
@@ -263,6 +308,42 @@
       "featured": true
     },
     {
+      "id": "gloves-touch",
+      "name": "Touchscreen Knit Gloves",
+      "category": "gloves",
+      "image": "/images/blog-fw-cable-knit-flatlay.jpg",
+      "desc": "Knit gloves with touchscreen fingertips, practical and warm.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
+      "id": "gloves-mittens",
+      "name": "Chunky Knit Mittens",
+      "category": "gloves",
+      "image": "/images/blog-fw-cable-knit-flatlay.jpg",
+      "desc": "Cozy chunky knit mittens, a classic cold-weather essential.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
+      "id": "gloves-fleece",
+      "name": "Fleece-Lined Knit Gloves",
+      "category": "gloves",
+      "image": "/images/blog-fw-cable-knit-flatlay.jpg",
+      "desc": "Knit gloves with a soft fleece lining for extra warmth.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
+      "id": "gloves-knit-blue",
+      "name": "Knit Gloves — Blue",
+      "category": "gloves",
+      "image": "/images/blog-fw-blue-layer-scarf.jpg",
+      "desc": "A soft knit glove in blue, a warm and colorful winter pick.",
+      "tags": ["unisex", "winter"],
+      "featured": false
+    },
+    {
       "id": "legwarmers-knit",
       "name": "Rib Knit Legwarmers",
       "category": "legwear",
@@ -270,6 +351,42 @@
       "desc": "Rib knit legwarmers for a cozy, layered winter look.",
       "tags": ["women", "winter"],
       "featured": true
+    },
+    {
+      "id": "legwarmers-tall",
+      "name": "Long Knit Legwarmers",
+      "category": "legwear",
+      "image": "/images/blog-fw-sand-knit-guitar.jpg",
+      "desc": "Extra-long knit legwarmers for a fashion-forward winter look.",
+      "tags": ["women", "winter"],
+      "featured": false
+    },
+    {
+      "id": "winter-socks",
+      "name": "Wool Winter Socks",
+      "category": "legwear",
+      "image": "/images/blog-fw-cable-knit-flatlay.jpg",
+      "desc": "Warm wool socks to keep feet cozy through the cold season.",
+      "tags": ["unisex", "winter"],
+      "featured": true
+    },
+    {
+      "id": "summer-socks",
+      "name": "Light Knit Socks",
+      "category": "legwear",
+      "image": "/images/blog-fw-cable-knit-flatlay.jpg",
+      "desc": "Lightweight knit socks for everyday comfort.",
+      "tags": ["unisex", "everyday"],
+      "featured": false
+    },
+    {
+      "id": "legwarmers-grey",
+      "name": "Rib Legwarmers — Grey",
+      "category": "legwear",
+      "image": "/images/blog-fw-sand-knit-guitar.jpg",
+      "desc": "A soft grey rib legwarmer, easy to pair with any outfit.",
+      "tags": ["women", "winter"],
+      "featured": false
     }
   ]
 }
