@@ -13,10 +13,6 @@
   .prod-hero{background:var(--cream-2);border-bottom:1px solid var(--line);padding:60px 0}
   .prod-hero h1{font-family:var(--serif);font-size:38px;line-height:1.2;font-weight:700;margin-bottom:12px}
   .prod-hero p{color:var(--ink-soft);font-size:17px;max-width:660px}
-  .cat-filter{display:flex;flex-wrap:wrap;gap:10px;padding:28px 0}
-  .cat-btn{border:1px solid var(--line);background:var(--white);border-radius:30px;padding:9px 18px;font-size:14px;color:var(--ink-soft);cursor:pointer;transition:.2s;font-family:var(--sans)}
-  .cat-btn:hover{border-color:var(--wool-dark);color:var(--wool-dark)}
-  .cat-btn.active{background:var(--wool);color:#fff;border-color:var(--wool)}
   .cat-section{margin-bottom:44px}
   .cat-section h2{font-family:var(--serif);font-size:26px;margin:26px 0 18px;padding-bottom:12px;border-bottom:2px solid var(--wool)}
   .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -29,6 +25,17 @@
   .prod-tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wool-dark);margin-bottom:8px;font-weight:600}
   @media(max-width:900px){.prod-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:600px){.prod-grid{grid-template-columns:1fr}.prod-card img{height:260px}}
+  /* Products dropdown nav */
+  .nav-drop{position:relative}
+  .nav-drop .caret{font-size:10px;margin-left:4px;opacity:.7}
+  .nav-drop-menu{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:0 14px 34px rgba(90,70,50,.14);min-width:210px;padding:8px;display:none;z-index:60}
+  .nav-drop:hover .nav-drop-menu,.nav-drop:focus-within .nav-drop-menu{display:block}
+  .nav-drop-menu a{display:block;padding:9px 14px;font-size:14px;color:var(--ink);border-radius:6px}
+  .nav-drop-menu a:hover{background:var(--cream);color:var(--wool-dark)}
+  @media(max-width:820px){
+    .nav-drop-menu{position:static;display:block;box-shadow:none;border:none;border-radius:0;padding:0 0 0 10px;min-width:0}
+    .nav-drop-menu a{padding:15px 24px}
+  }
 </style>
 </head>
 <body>
@@ -40,7 +47,26 @@
       <span class="name">YZR Sweaters</span>
     </a>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <nav class="nav-links"><a href="/">Home</a><a href="/products" class="active">Products</a><a href="/capabilities">Capabilities</a><a href="/about">About</a><a href="/blog">Blog</a><a href="/contact" class="btn btn-primary">Get a Quote</a></nav>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <div class="nav-drop">
+        <a href="/products" class="active">Products <span class="caret">&#9662;</span></a>
+        <div class="nav-drop-menu">
+          <a href="/products#sweaters-pullovers">Sweaters &amp; Pullovers</a>
+          <a href="/products#cardigans">Cardigans &amp; Knit Jackets</a>
+          <a href="/products#knitted-dresses">Knitted Dresses</a>
+          <a href="/products#knitted-polos">Knitted Polos</a>
+          <a href="/products#scarves-wraps">Scarves &amp; Wraps</a>
+          <a href="/products#beanies-hats">Beanies &amp; Hats</a>
+          <a href="/products#gloves-mittens">Gloves &amp; Mittens</a>
+          <a href="/products#legwarmers-socks">Legwarmers &amp; Socks</a>
+        </div>
+      </div>
+      <a href="/capabilities">Capabilities</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact" class="btn btn-primary">Get a Quote</a>
+    </nav>
   </div>
 </header>
 
@@ -52,12 +78,6 @@
   </div>
 </section>
 
-<div class="wrap">
-  <div class="cat-filter" id="cat-filter">
-    <button class="cat-btn active" data-cat="all">All</button>
-  </div>
-</div>
-
 <section class="blog-list">
   <div class="wrap">
     <div id="products-container"></div>
@@ -65,28 +85,14 @@
 </section>
 
 <script>
-  fetch('/products.json')
-    .then(function(r){ return r.json(); })
-    .then(function(data){
-      document.getElementById('products-container').innerHTML = renderAll(data);
-      var filter = document.getElementById('cat-filter');
-      data.categories.forEach(function(c){
-        var b = document.createElement('button');
-        b.className = 'cat-btn';
-        b.setAttribute('data-cat', c.id);
-        b.textContent = c.name;
-        filter.appendChild(b);
-      });
-      bindFilter(data);
-    });
-
+  // Data-driven product rendering with per-category anchors.
   function renderAll(data){
     var html = '';
     var shown = new Set();
     data.categories.forEach(function(c){
       var items = data.products.filter(function(p){ return p.category === c.id; });
       if(!items.length) return;
-      html += '<div class="cat-section" data-cat="'+c.id+'">';
+      html += '<div class="cat-section" id="'+c.slug+'" data-cat="'+c.id+'">';
       html += '<h2>'+c.name+'</h2>';
       html += '<div class="prod-grid">';
       items.forEach(function(p){
@@ -95,7 +101,6 @@
       });
       html += '</div></div>';
     });
-    // Any product whose category had no matching section (fallback)
     var missing = data.products.filter(function(p){ return !shown.has(p.id); });
     if(missing.length){
       html += '<div class="cat-section"><h2>More</h2><div class="prod-grid">';
@@ -107,18 +112,25 @@
     return html;
   }
 
-  function bindFilter(data){
-    document.querySelectorAll('.cat-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        document.querySelectorAll('.cat-btn').forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        var cat = btn.getAttribute('data-cat');
-        document.querySelectorAll('.cat-section').forEach(function(sec){
-          sec.style.display = (cat === 'all' || sec.getAttribute('data-cat') === cat) ? '' : 'none';
-        });
-      });
+  fetch('/products.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      document.getElementById('products-container').innerHTML = renderAll(data);
+      // If URL has a category hash, scroll to it
+      var hash = location.hash.replace('#','');
+      if(hash){
+        var el = document.getElementById(hash);
+        if(el){ setTimeout(function(){ el.scrollIntoView({behavior:'smooth', block:'start'}); }, 60); }
+      }
     });
-  }
+
+  // Highlight the target category section when jumped to
+  window.addEventListener('hashchange', function(){
+    var hash = location.hash.replace('#','');
+    if(!hash) return;
+    var el = document.getElementById(hash);
+    if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+  });
 </script>
 
 <footer>

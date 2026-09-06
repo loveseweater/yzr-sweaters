@@ -59,6 +59,12 @@
     .nav-links{display:flex;gap:28px;align-items:center}
     .nav-links a{font-size:14px;color:var(--ink-soft);transition:color .2s}
     .nav-links a:hover{color:var(--wool-dark)}
+    .nav-drop{position:relative;display:flex;align-items:center}
+    .nav-drop .caret{font-size:10px;margin-left:4px;opacity:.7}
+    .nav-drop-menu{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--line);border-radius:8px;box-shadow:0 14px 34px rgba(90,70,50,.14);min-width:210px;padding:8px;display:none;z-index:60}
+    .nav-drop:hover .nav-drop-menu,.nav-drop:focus-within .nav-drop-menu{display:block}
+    .nav-drop-menu a{display:block;padding:9px 14px;font-size:14px;color:var(--ink);border-radius:6px}
+    .nav-drop-menu a:hover{background:var(--cream);color:var(--wool-dark)}
     .btn{
       display:inline-block;padding:10px 18px;border-radius:4px;
       font-size:14px;font-weight:600;transition:transform .15s,box-shadow .15s;
@@ -74,6 +80,9 @@
       .nav-links a{padding:16px 24px;width:100%}
       .nav-links .btn{margin:12px 24px}
       .menu-toggle{display:block}
+      .nav-drop{width:100%;flex-direction:column;align-items:stretch}
+      .nav-drop-menu{position:static;display:block;box-shadow:none;border:none;border-radius:0;padding:0 0 0 18px;min-width:0;background:transparent}
+      .nav-drop-menu a{padding:12px 24px}
     }
 
     /* ===== Hero ===== */
@@ -252,7 +261,7 @@
       <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
       <nav class="nav-links">
         <a href="/" class="active">Home</a>
-        <a href="/products">Products</a>
+        <div class="nav-drop"><a href="/products">Products <span class="caret">&#9662;</span></a><div class="nav-drop-menu"><a href="/products#sweaters-pullovers">Sweaters &amp; Pullovers</a><a href="/products#cardigans">Cardigans &amp; Knit Jackets</a><a href="/products#knitted-dresses">Knitted Dresses</a><a href="/products#knitted-polos">Knitted Polos</a><a href="/products#scarves-wraps">Scarves &amp; Wraps</a><a href="/products#beanies-hats">Beanies &amp; Hats</a><a href="/products#gloves-mittens">Gloves &amp; Mittens</a><a href="/products#legwarmers-socks">Legwarmers &amp; Socks</a></div></div>
         <a href="/capabilities">Capabilities</a>
         <a href="/about">About</a>
         <a href="/blog">Blog</a>
