@@ -1,0 +1,14 @@
+# YZR Sweaters — Cloudflare Pages redirects
+# Permanently (301) redirect all .html URLs to the canonical extensionless URL
+# so Google only indexes one version of each page (fixes "duplicate, no canonical" issue).
+
+/blog.html          /blog            301
+/products.html      /products        301
+/about.html         /about           301
+/contact.html       /contact         301
+/capabilities.html  /capabilities    301
+/product.html       /product         301
+/404.html           /404             301
+
+# Blog articles: redirect every /blog/<slug>.html to /blog/<slug>
+/blog/*.html        /blog/:splat     301
