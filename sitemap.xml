@@ -96,6 +96,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/sweater-fabric-weight-gsm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/sweater-sampling-process</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/guide-to-knitwear-garment-types</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -112,6 +122,16 @@
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/mens-knitwear-styles-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/womens-sweater-styles-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/knitted-dress-buying-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -146,6 +166,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-quality-defects-inspection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/import-sweaters-from-china-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -156,12 +181,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yzrsweaters.com/blog/sustainable-knitwear-manufacturing</loc>
+    <loc>https://yzrsweaters.com/blog/knitwear-sourcing-trip-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yzrsweaters.com/blog/knitwear-quality-defects-inspection</loc>
+    <loc>https://yzrsweaters.com/blog/sustainable-knitwear-manufacturing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
