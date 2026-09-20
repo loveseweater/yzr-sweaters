@@ -91,12 +91,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/alpaca-mohair-sweater-fibres</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/knit-gauge-explained</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/sweater-fabric-weight-gsm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/seamless-knitwear-technology</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -136,6 +146,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/kids-knitwear-sourcing-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/knitwear-sizing-grading-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -156,6 +171,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/nordic-market-knitwear-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/sweater-care-fabric-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -172,6 +192,11 @@
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/import-sweaters-from-china-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/hs-codes-duties-sweater-imports</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
