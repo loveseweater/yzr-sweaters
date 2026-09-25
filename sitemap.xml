@@ -196,6 +196,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/cardigan-styling-merchandising-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/mens-knitwear-styles-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -217,6 +222,16 @@
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/knit-vests-coord-sets-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/ribbed-knit-tops-buying-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/turtleneck-mock-neck-sweater-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -807,6 +807,101 @@
       "moq": "Flexible — small batches welcome",
       "leadtime": "Sample 7–10 days, bulk 25–35 days",
       "craft": "Rib knit"
+    },
+    {
+      "id": "linfair-frill-mockneck-white",
+      "name": "Frill-Trim Mock-Neck Rib Knit — White",
+      "category": "sweaters",
+      "image": "/images/product-linfair-frill-white.jpg",
+      "desc": "A fine-rib mock-neck sweater with a delicate frill trim at the collar, cuffs and hem. Slim fit, soft hand feel — an easy layering piece for autumn and winter.",
+      "tags": [
+        "women",
+        "autumn-winter",
+        "slim fit"
+      ],
+      "featured": true,
+      "material": "Wool blend, viscose or acrylic knit",
+      "colors": "White, Black, Apricot, Khaki, Gray",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Fine rib knit with frill trim"
+    },
+    {
+      "id": "linfair-frill-mockneck-black",
+      "name": "Frill-Trim Mock-Neck Rib Knit — Black",
+      "category": "sweaters",
+      "image": "/images/product-linfair-frill-black.jpg",
+      "desc": "The same frill-trim mock-neck knit in black. A wardrobe staple that works alone or under a jacket.",
+      "tags": [
+        "women",
+        "autumn-winter",
+        "classic"
+      ],
+      "featured": false,
+      "material": "Wool blend, viscose or acrylic knit",
+      "colors": "Black, White, Apricot, Khaki, Gray",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Fine rib knit with frill trim"
+    },
+    {
+      "id": "linfair-mockneck-camel",
+      "name": "Mock-Neck Ribbed Knit Sweater — Camel",
+      "category": "sweaters",
+      "image": "/images/product-linfair-mockneck-camel.jpg",
+      "desc": "A clean mock-neck sweater in a warm camel tone. Ribbed body and cuffs, slim fit, soft next-to-skin finish.",
+      "tags": [
+        "women",
+        "autumn-winter",
+        "neutral"
+      ],
+      "featured": true,
+      "material": "Wool blend, viscose or acrylic knit",
+      "colors": "Camel, Apricot, Black, Gray, White",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib knit, mock neck"
+    },
+    {
+      "id": "linfair-turtleneck-gray",
+      "name": "Fitted Turtleneck Knit — Gray",
+      "category": "sweaters",
+      "image": "/images/product-linfair-turtleneck-gray.jpg",
+      "desc": "A close-fit turtleneck in soft gray. A dependable base layer for winter collections, easy to style and easy to sell.",
+      "tags": [
+        "women",
+        "winter",
+        "basic"
+      ],
+      "featured": false,
+      "material": "Wool blend, viscose or acrylic knit",
+      "colors": "Gray, Apricot, Black, Camel, White",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib knit, turtleneck"
+    },
+    {
+      "id": "linfair-cardigan-coffee",
+      "name": "Round-Neck Button Cardigan — Coffee",
+      "category": "cardigans",
+      "image": "/images/product-linfair-cardigan-coffee.jpg",
+      "desc": "A classic round-neck cardigan with a full button front and ribbed trims. Soft knit with a relaxed fit — a year-round layering item.",
+      "tags": [
+        "women",
+        "layer",
+        "classic"
+      ],
+      "featured": true,
+      "material": "Wool blend, acrylic or cotton knit",
+      "colors": "Coffee, Black, Burgundy, Light Gray, Navy Blue",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey knit with rib trims"
     }
   ]
 }
