@@ -12,3 +12,7 @@
 
 # Blog articles: redirect every /blog/<slug>.html to /blog/<slug>
 /blog/*.html        /blog/:splat     301
+
+# Product detail pages are now prerendered static files under /product/<id>/index.html
+# (see tools/build-static-pages.js), so no wildcard rewrite is needed. Cloudflare Pages
+# serves /product/<id> directly from the generated directory.

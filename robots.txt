@@ -1,9 +1,16 @@
 # YZR Sweaters — robots.txt
 # www.robotstxt.org
 # 允许所有搜索引擎与 AI 助手抓取（用于收录、检索与引用）
+# 屏蔽不产生 SEO 价值的路径：后台工具与常见追踪参数
 
 User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
+Disallow: /admin
+Disallow: /*?utm_
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+Disallow: /*?msclkid=
+Disallow: /*?srsltid=
 
 Sitemap: https://yzrsweaters.com/sitemap.xml

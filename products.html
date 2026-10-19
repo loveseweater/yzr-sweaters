@@ -25,6 +25,9 @@
   .prod-tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wool-dark);margin-bottom:8px;font-weight:600}
   @media(max-width:900px){.prod-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:600px){.prod-grid{grid-template-columns:1fr}.prod-card img{height:260px}}
+  .cat-nav{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}
+  .cat-nav a{font-size:13.5px;font-weight:600;color:var(--wool-dark);border:1px solid var(--line);background:var(--white);padding:8px 14px;border-radius:20px;transition:.2s}
+  .cat-nav a:hover{background:var(--wool);color:#fff;border-color:var(--wool)}
   /* Products dropdown nav */
   .nav-drop{position:relative}
   .nav-drop .caret{font-size:10px;margin-left:4px;opacity:.7}
@@ -38,13 +41,22 @@
   }
 </style>
 <link rel="canonical" href="https://yzrsweaters.com/products">
+<meta property="og:title" content="Products | YZR Sweaters — Knitwear & Knitted Accessories">
+<meta property="og:description" content="Explore YZR Sweaters' range of knitwear and knitted accessories — sweaters, cardigans, knitted dresses, polos, scarves, beanies, gloves and legwarmers. OEM/ODM custom production from Dongguan, China.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yzrsweaters.com/products">
+<meta property="og:image" content="https://yzrsweaters.com/images/product-linfair-cardigan-coffee.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Products | YZR Sweaters — Knitwear & Knitted Accessories">
+<meta name="twitter:description" content="Explore YZR Sweaters' range of knitwear and knitted accessories — sweaters, cardigans, knitted dresses, polos, scarves, beanies, gloves and legwarmers. OEM/ODM custom production from Dongguan, China.">
+<meta name="twitter:image" content="https://yzrsweaters.com/images/product-linfair-cardigan-coffee.jpg">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
     <a href="/" class="brand" aria-label="YZR Sweaters home">
-      <img src="/images/logo.png" alt="YZR Sweaters logo">
+      <img src="/images/logo.png" alt="YZR Sweaters logo" width="400" height="295">
       <span class="name">YZR Sweaters</span>
     </a>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
@@ -81,6 +93,17 @@
 
 <section class="blog-list">
   <div class="wrap">
+    <!-- Static category links: crawlable without JavaScript, anchors match the rendered sections below -->
+    <nav class="cat-nav" aria-label="Product categories">
+      <a href="#sweaters-pullovers">Sweaters &amp; Pullovers</a>
+      <a href="#cardigans">Cardigans &amp; Knit Jackets</a>
+      <a href="#knitted-dresses">Knitted Dresses</a>
+      <a href="#knitted-polos">Knitted Polos</a>
+      <a href="#scarves-wraps">Scarves &amp; Wraps</a>
+      <a href="#beanies-hats">Beanies &amp; Hats</a>
+      <a href="#gloves-mittens">Gloves &amp; Mittens</a>
+      <a href="#legwarmers-socks">Legwarmers &amp; Socks</a>
+    </nav>
     <div id="products-container"></div>
   </div>
 </section>
@@ -99,7 +122,7 @@
       html += '<div class="prod-grid">';
       items.forEach(function(p){
         shown.add(p.id);
-        html += '<a class="prod-card" href="/product?id='+p.id+'" style="display:block;text-decoration:none;color:inherit"><img src="'+p.image+'" alt="'+esc(p.name)+'" loading="lazy"><div class="prod-info"><span class="prod-tag">'+p.tags.join(' · ')+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.desc)+'</p></div></a>';
+        html += '<a class="prod-card" href="/product/'+p.id+'" style="display:block;text-decoration:none;color:inherit"><img src="'+p.image+'" alt="'+esc(p.name)+'" loading="lazy"><div class="prod-info"><span class="prod-tag">'+p.tags.join(' · ')+'</span><h3>'+esc(p.name)+'</h3><p>'+esc(p.desc)+'</p></div></a>';
       });
       html += '</div></div>';
     });
@@ -139,7 +162,7 @@
     <div class="wrap foot">
       <div class="foot-info">
         <div class="brand">
-          <img src="/images/logo.png" alt="YZR Sweaters">
+          <img src="/images/logo.png" alt="YZR Sweaters" width="400" height="295">
           <span class="name">YZR Sweaters</span>
         </div>
         <p class="foot-tag">Custom knitwear &amp; OEM/ODM sweaters, made in Dongguan, China — for fashion brands, wholesalers and online retailers.</p>
@@ -165,6 +188,6 @@
 
 <script data-goatcounter="https://yzrsweaters.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"YZR Sweaters Product Range","itemListElement":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"YZR Sweaters Product Range","url":"https://yzrsweaters.com/products","mainEntity":{"@type":"ItemList","numberOfItems":50,"itemListElement":[{"@type":"ListItem","position":1,"name":"V-Neck Knitted Polo — Ivory","url":"https://yzrsweaters.com/product/knit-polo-ivory"},{"@type":"ListItem","position":2,"name":"V-Neck Knitted Polo — Khaki","url":"https://yzrsweaters.com/product/knit-polo-khaki"},{"@type":"ListItem","position":3,"name":"V-Neck Knitted Polo — Olive","url":"https://yzrsweaters.com/product/knit-polo-olive"},{"@type":"ListItem","position":4,"name":"Chunky Knit Sweater — Mustard","url":"https://yzrsweaters.com/product/mustard-chunky-knit"},{"@type":"ListItem","position":5,"name":"Chunky Cable Knit — Cream","url":"https://yzrsweaters.com/product/cable-cream-knit"},{"@type":"ListItem","position":6,"name":"Crew-Neck Knit Sweater — Cream","url":"https://yzrsweaters.com/product/cream-crew-knit"},{"@type":"ListItem","position":7,"name":"Fringed Knit Poncho — Cream","url":"https://yzrsweaters.com/product/knit-poncho-cream"},{"@type":"ListItem","position":8,"name":"Layered Knit Coat — Blue","url":"https://yzrsweaters.com/product/blue-layer-coat"},{"@type":"ListItem","position":9,"name":"Wool Knit Coat — Pink","url":"https://yzrsweaters.com/product/pink-wool-coat"},{"@type":"ListItem","position":10,"name":"Knit Jacket — Olive with Beanie","url":"https://yzrsweaters.com/product/olive-knit-jacket"},{"@type":"ListItem","position":11,"name":"Cocoon Knit Coat — Wine","url":"https://yzrsweaters.com/product/wine-cocoon-coat"},{"@type":"ListItem","position":12,"name":"Halter-Neck Knit Dress — Wine","url":"https://yzrsweaters.com/product/halter-dress-wine"},{"@type":"ListItem","position":13,"name":"Halter-Neck Rib Knit Dress — Sage","url":"https://yzrsweaters.com/product/halter-dress-sage"},{"@type":"ListItem","position":14,"name":"Halter-Neck Knit Dress — Sage Green","url":"https://yzrsweaters.com/product/halter-dress-sage2"},{"@type":"ListItem","position":15,"name":"Halter-Neck Knit Dress — Coral","url":"https://yzrsweaters.com/product/halter-dress-coral"},{"@type":"ListItem","position":16,"name":"Color-Block Knit Dress — Black","url":"https://yzrsweaters.com/product/colorblock-dress-black"},{"@type":"ListItem","position":17,"name":"Color-Block Knit Dress — Caramel","url":"https://yzrsweaters.com/product/colorblock-dress-caramel"},{"@type":"ListItem","position":18,"name":"Knitted Polo — Ivory","url":"https://yzrsweaters.com/product/knit-polo-ivory2"},{"@type":"ListItem","position":19,"name":"Knitted Polo — Olive","url":"https://yzrsweaters.com/product/knit-polo-olive2"},{"@type":"ListItem","position":20,"name":"Knitted Polo — Khaki","url":"https://yzrsweaters.com/product/knit-polo-khaki2"},{"@type":"ListItem","position":21,"name":"Wavy Stripe Knit Tank — Blue","url":"https://yzrsweaters.com/product/tank-blue"},{"@type":"ListItem","position":22,"name":"Wavy Stripe Knit Tank — Green","url":"https://yzrsweaters.com/product/tank-green"},{"@type":"ListItem","position":23,"name":"Chunky Knit Scarf — Blue","url":"https://yzrsweaters.com/product/scarf-blue"},{"@type":"ListItem","position":24,"name":"Wool Scarf — Pink","url":"https://yzrsweaters.com/product/scarf-pink"},{"@type":"ListItem","position":25,"name":"Fringed Knit Wrap — Cream","url":"https://yzrsweaters.com/product/scarf-fringed-cream"},{"@type":"ListItem","position":26,"name":"Knit Scarf — Mustard","url":"https://yzrsweaters.com/product/scarf-mustard"},{"@type":"ListItem","position":27,"name":"Rib Knit Scarf — Grey","url":"https://yzrsweaters.com/product/scarf-grey"},{"@type":"ListItem","position":28,"name":"Rib Knit Beanie — Black","url":"https://yzrsweaters.com/product/beanie-olive"},{"@type":"ListItem","position":29,"name":"Knit Beanie — Cream","url":"https://yzrsweaters.com/product/beanie-cream"},{"@type":"ListItem","position":30,"name":"Pom Beanie — Navy","url":"https://yzrsweaters.com/product/beanie-navy"},{"@type":"ListItem","position":31,"name":"Knit Beret — Classic","url":"https://yzrsweaters.com/product/beanie-beret"},{"@type":"ListItem","position":32,"name":"Cuffed Beanie — Charcoal","url":"https://yzrsweaters.com/product/beanie-charcoal"},{"@type":"ListItem","position":33,"name":"Wool Knit Gloves","url":"https://yzrsweaters.com/product/gloves-wool"},{"@type":"ListItem","position":34,"name":"Touchscreen Knit Gloves","url":"https://yzrsweaters.com/product/gloves-touch"},{"@type":"ListItem","position":35,"name":"Chunky Knit Mittens","url":"https://yzrsweaters.com/product/gloves-mittens"},{"@type":"ListItem","position":36,"name":"Fleece-Lined Knit Gloves","url":"https://yzrsweaters.com/product/gloves-fleece"},{"@type":"ListItem","position":37,"name":"Knit Gloves — Blue","url":"https://yzrsweaters.com/product/gloves-knit-blue"},{"@type":"ListItem","position":38,"name":"Rib Knit Legwarmers","url":"https://yzrsweaters.com/product/legwarmers-knit"},{"@type":"ListItem","position":39,"name":"Long Knit Legwarmers","url":"https://yzrsweaters.com/product/legwarmers-tall"},{"@type":"ListItem","position":40,"name":"Wool Winter Socks","url":"https://yzrsweaters.com/product/winter-socks"},{"@type":"ListItem","position":41,"name":"Light Knit Socks","url":"https://yzrsweaters.com/product/summer-socks"},{"@type":"ListItem","position":42,"name":"Rib Legwarmers — Grey","url":"https://yzrsweaters.com/product/legwarmers-grey"},{"@type":"ListItem","position":43,"name":"Frill-Trim Mock-Neck Rib Knit — White","url":"https://yzrsweaters.com/product/linfair-frill-mockneck-white"},{"@type":"ListItem","position":44,"name":"Frill-Trim Mock-Neck Rib Knit — Black","url":"https://yzrsweaters.com/product/linfair-frill-mockneck-black"},{"@type":"ListItem","position":45,"name":"Mock-Neck Ribbed Knit Sweater — Camel","url":"https://yzrsweaters.com/product/linfair-mockneck-camel"},{"@type":"ListItem","position":46,"name":"Fitted Turtleneck Knit — Gray","url":"https://yzrsweaters.com/product/linfair-turtleneck-gray"},{"@type":"ListItem","position":47,"name":"Round-Neck Button Cardigan — Coffee","url":"https://yzrsweaters.com/product/linfair-cardigan-coffee"},{"@type":"ListItem","position":48,"name":"Wave-Pattern Halter Dress — Coral & White","url":"https://yzrsweaters.com/product/wave-halter-dress-coral"},{"@type":"ListItem","position":49,"name":"Wave-Pattern Halter Dress — Sky & Grey","url":"https://yzrsweaters.com/product/wave-halter-dress-sky"},{"@type":"ListItem","position":50,"name":"Striped Halter-Neck Knit Dress — Caramel","url":"https://yzrsweaters.com/product/halter-dress-caramel-stripe"}]}}</script>
 </body>
 </html>

@@ -902,6 +902,63 @@
       "moq": "Flexible MOQ, small first runs welcome",
       "leadtime": "Sample 7–15 days, bulk 30–45 days",
       "craft": "Jersey knit with rib trims"
+    },
+    {
+      "id": "wave-halter-dress-coral",
+      "name": "Wave-Pattern Halter Dress — Coral & White",
+      "category": "dresses",
+      "image": "/images/product-dress-orange.jpg",
+      "desc": "A sleeveless halter knit dress worked in alternating coral, pink and white wave stripes with pointelle rows between the bands. Light on the body, made for spring and resort capsules.",
+      "tags": [
+        "women",
+        "spring-summer",
+        "statement"
+      ],
+      "featured": true,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Coral, White, Pink (custom stripes to any Pantone)",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey knit with pointelle wave bands"
+    },
+    {
+      "id": "wave-halter-dress-sky",
+      "name": "Wave-Pattern Halter Dress — Sky & Grey",
+      "category": "dresses",
+      "image": "/images/product-tank-blue2.jpg",
+      "desc": "The same wave-stripe halter dress in a cooler palette — sky blue, soft grey and white. An easy one-piece style for summer lines and online stores.",
+      "tags": [
+        "women",
+        "spring-summer",
+        "capsule"
+      ],
+      "featured": false,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Sky Blue, Grey, White (custom stripes to any Pantone)",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Jersey knit with pointelle wave bands"
+    },
+    {
+      "id": "halter-dress-caramel-stripe",
+      "name": "Striped Halter-Neck Knit Dress — Caramel",
+      "category": "dresses",
+      "image": "/images/product-halter-caramel.jpg",
+      "desc": "A fitted halter-neck knit dress in caramel and white stripes with a ribbed bodice. Warm neutrals that sit well in autumn capsules and transitional collections.",
+      "tags": [
+        "women",
+        "transitional",
+        "stripes"
+      ],
+      "featured": false,
+      "material": "Viscose, cotton, acrylic or wool blends",
+      "colors": "Caramel, White (custom stripes to any Pantone)",
+      "sizing": "XS–XL (custom grading available)",
+      "moq": "Flexible MOQ, small first runs welcome",
+      "leadtime": "Sample 7–15 days, bulk 30–45 days",
+      "craft": "Rib knit, striped body"
     }
   ]
 }

@@ -5,9 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product | YZR Sweaters</title>
 <meta name="description" content="Explore this knitwear product from YZR Sweaters — custom OEM/ODM production from Dongguan, China.">
-<meta name="robots" content="index, follow">
+<!-- Legacy template kept for old ?id= links. Not indexable: real product pages live at /product/<id>/ -->
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://yzrsweaters.com/product">
 <link rel="icon" href="/images/logo.png">
+<script>
+// Forward legacy /product?id=xxx links to the static, indexable product page.
+(function(){
+  var id = new URLSearchParams(location.search).get('id');
+  if (id && /^[a-z0-9\-]+$/i.test(id)) {
+    location.replace('/product/' + id);
+  }
+})();
+</script>
 <link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/page.css">
 <style>
@@ -40,6 +50,12 @@
   .rel-item .rn{padding:10px 12px;font-size:14px;color:var(--ink);font-family:var(--serif)}
   .notfound{text-align:center;padding:80px 0}
   .notfound h1{font-family:var(--serif);font-size:30px;margin-bottom:12px}
+  .read-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .read-item{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px 18px;transition:.2s}
+  .read-item:hover{border-color:var(--wool);transform:translateY(-2px)}
+  .read-item span{font-family:var(--serif);font-size:15px;color:var(--ink);line-height:1.35}
+  .read-item em{font-style:normal;font-size:13px;font-weight:600;color:var(--wool-dark);white-space:nowrap}
+  @media(max-width:700px){.read-grid{grid-template-columns:1fr}}
   @media(max-width:900px){.pd{grid-template-columns:1fr}.pd-img{position:static}.pd-img img{height:380px}.rel-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -48,7 +64,7 @@
 <header>
   <div class="wrap nav">
     <a href="/" class="brand" aria-label="YZR Sweaters home">
-      <img src="/images/logo.png" alt="YZR Sweaters logo">
+      <img src="/images/logo.png" alt="YZR Sweaters logo" width="400" height="295">
       <span class="name">YZR Sweaters</span>
     </a>
     <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
@@ -69,7 +85,7 @@
   <div class="wrap foot">
     <div class="foot-info">
       <div class="brand">
-        <img src="/images/logo.png" alt="YZR Sweaters">
+        <img src="/images/logo.png" alt="YZR Sweaters" width="400" height="295">
         <span class="name">YZR Sweaters</span>
       </div>
       <p class="foot-tag">Custom knitwear &amp; OEM/ODM sweaters, made in Dongguan, China — for fashion brands, wholesalers and online retailers.</p>
@@ -105,6 +121,61 @@
 
   function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
+  function productUrl(id){ return '/product/' + id; }
+
+  // Category-specific reading lists: gives each product page crawlable,
+  // contextually relevant outbound links into the blog cluster.
+  var READING = {
+    'sweaters': [
+      ['/blog/how-to-choose-a-knitwear-manufacturer', 'How to choose a knitwear manufacturer'],
+      ['/blog/sweater-yarn-guide', 'Sweater yarns: wool, cotton, acrylic & blends'],
+      ['/blog/sweater-bulk-wholesale-guide', 'Planning a bulk sweater order'],
+      ['/blog/knitwear-bill-of-materials', 'The BOM that prevents substitution']
+    ],
+    'cardigans': [
+      ['/blog/cardigan-styles-buying-guide', 'Cardigan styles: a buying guide'],
+      ['/blog/cardigan-closures-buttons-zips', 'Choosing buttons, zips and closures'],
+      ['/blog/knitwear-tech-pack-guide', 'Writing a tech pack a factory can quote'],
+      ['/blog/knitwear-trims-labels-hangtags', 'Trims, labels and hangtags']
+    ],
+    'dresses': [
+      ['/blog/knitted-dress-buying-guide', 'Knitted dresses: a buying guide'],
+      ['/blog/sweater-measurement-guide', 'Points of measure and tolerances'],
+      ['/blog/knitwear-sizing-grading-guide', 'Knitwear sizing and grading'],
+      ['/blog/knitwear-sample-review-checklist', 'Reviewing a sample before bulk']
+    ],
+    'polos': [
+      ['/blog/knitted-polo-wholesale-guide', 'Knitted polos: a wholesale guide'],
+      ['/blog/sweater-color-trends-pantone', 'Working to Pantone with your factory'],
+      ['/blog/lab-dip-color-approval-knitwear', 'Lab dips and colour approval'],
+      ['/blog/knitwear-colour-consistency', 'Colour consistency across an order']
+    ],
+    'scarves': [
+      ['/blog/knit-accessories-scarves-beanies', 'Knit accessories that sell'],
+      ['/blog/knit-accessories-profit-guide', 'Accessories as a margin add-on'],
+      ['/blog/knitwear-patterns-explained', 'Cable, jacquard and intarsia'],
+      ['/blog/knit-gauge-explained', 'What gauge means for your product']
+    ],
+    'beanies': [
+      ['/blog/knit-accessories-scarves-beanies', 'Knit accessories that sell'],
+      ['/blog/knit-accessories-profit-guide', 'Accessories as a margin add-on'],
+      ['/blog/sweater-yarn-guide', 'Choosing the right yarn'],
+      ['/blog/low-moq-knitwear-manufacturing', 'Low MOQ routes for small brands']
+    ],
+    'gloves': [
+      ['/blog/knit-accessories-scarves-beanies', 'Knit accessories that sell'],
+      ['/blog/sweater-yarn-guide', 'Choosing the right yarn'],
+      ['/blog/knitwear-quality-defects-inspection', 'Common defects and inspection'],
+      ['/blog/sweater-packaging-shipping-guide', 'Packaging and shipping']
+    ],
+    'legwear': [
+      ['/blog/knit-accessories-scarves-beanies', 'Knit accessories that sell'],
+      ['/blog/knit-accessories-profit-guide', 'Accessories as a margin add-on'],
+      ['/blog/knitwear-sizing-grading-guide', 'Sizing and grading basics'],
+      ['/blog/sweater-pilling-prevention-guide', 'Preventing pilling']
+    ]
+  };
+
   function render(p, all){
     var cat = CAT_NAME[p.category] || 'Products';
     var slug = SLUG[p.category] || '';
@@ -123,10 +194,18 @@
     if(related.length){
       relHtml = '<div class="related"><h2>Related items</h2><div class="rel-grid">';
       related.forEach(function(r){
-        relHtml += '<a class="rel-item" href="/product?id='+r.id+'"><img src="'+r.image+'" alt="'+esc(r.name)+'"><div class="rn">'+esc(r.name)+'</div></a>';
+        relHtml += '<a class="rel-item" href="'+productUrl(r.id)+'"><img src="'+r.image+'" alt="'+esc(r.name)+'"><div class="rn">'+esc(r.name)+'</div></a>';
       });
       relHtml += '</div></div>';
     }
+
+    // reading block (contextual blog links)
+    var reads = READING[p.category] || READING['sweaters'];
+    var readHtml = '<div class="related"><h2>From our blog</h2><div class="read-grid">';
+    reads.forEach(function(r){
+      readHtml += '<a class="read-item" href="'+r[0]+'"><span>'+r[1]+'</span><em>Read &rarr;</em></a>';
+    });
+    readHtml += '</div></div>';
 
     var root = document.getElementById('product-root');
     root.innerHTML =
@@ -150,16 +229,52 @@
             '<div class="trust-item"><strong>Realistic lead times</strong><span>Clear sampling &amp; bulk schedule</span></div>'+
           '</div>'+
         '</div>'+
-      '</div>'+relHtml;
+      '</div>'+relHtml+readHtml;
 
     document.title = esc(p.name) + ' | YZR Sweaters';
     var desc = (p.desc||'').slice(0,150);
     document.querySelector('meta[name="description"]').setAttribute('content', desc);
+
+    // Product structured data for rich results
+    var ld = document.createElement('script');
+    ld.type = 'application/ld+json';
+    ld.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      'name': p.name,
+      'image': 'https://yzrsweaters.com' + p.image,
+      'description': p.desc,
+      'brand': { '@type': 'Brand', 'name': 'YZR Sweaters' },
+      'manufacturer': { '@type': 'Organization', 'name': 'Dongguan Yu Zhengrong Garment Trading Co., Ltd.', 'url': 'https://yzrsweaters.com/' },
+      'offers': {
+        '@type': 'Offer',
+        'url': 'https://yzrsweaters.com/product/' + p.id,
+        'priceCurrency': 'USD',
+        'availability': 'https://schema.org/InStock',
+        'businessFunction': 'http://purl.org/goodrelations/v1#Sell'
+      }
+    });
+    document.head.appendChild(ld);
+
+    // BreadcrumbList schema
+    var ld2 = document.createElement('script');
+    ld2.type = 'application/ld+json';
+    ld2.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://yzrsweaters.com/' },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Products', 'item': 'https://yzrsweaters.com/products' },
+        { '@type': 'ListItem', 'position': 3, 'name': cat, 'item': 'https://yzrsweaters.com/products#' + slug },
+        { '@type': 'ListItem', 'position': 4, 'name': p.name, 'item': 'https://yzrsweaters.com/product/' + p.id }
+      ]
+    });
+    document.head.appendChild(ld2);
   }
 
   function load(){
-    var params = new URLSearchParams(location.search);
-    var id = params.get('id');
+    var m = location.pathname.match(/^\/product\/([a-z0-9\-]+)\/?$/i);
+    var id = m ? m[1] : new URLSearchParams(location.search).get('id');
     fetch('/products.json').then(function(r){ return r.json(); }).then(function(data){
       var p = data.products.find(function(x){ return x.id === id; });
       if(!p){

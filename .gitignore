@@ -4,3 +4,6 @@ shots/
 images/probe-*.jpg
 images/blog-fw-sweater-*.jpg
 images/.persist_test
+
+# Local content-management tool: never deploy to Cloudflare Pages
+admin/
