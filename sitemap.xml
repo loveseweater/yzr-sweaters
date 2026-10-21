@@ -391,6 +391,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-cutting-room-yield</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/knitwear-dead-stock-clearance</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -422,6 +428,12 @@
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/knitwear-fit-session-pattern-block</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-fulfilment-storage</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -523,6 +535,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-sample-shipping-courier</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/knitwear-sample-types</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -560,6 +578,12 @@
   </url>
   <url>
     <loc>https://yzrsweaters.com/blog/knitwear-sourcing-trip-guide</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-spirality-twist</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -643,6 +667,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/knitwear-yellowing-storage</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/lab-dip-color-approval-knitwear</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -673,7 +703,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yzrsweaters.com/blog/metamerism-knitwear-colour-approval</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yzrsweaters.com/blog/microplastic-shedding-knitwear</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/middle-east-knitwear-market-guide</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yzrsweaters.com/blog/moth-insect-damage-wool-knitwear</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1415,29 +1463,5 @@
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yzrsweaters.com/blog/knitwear-spirality-twist</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yzrsweaters.com/blog/knitwear-yellowing-storage</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yzrsweaters.com/blog/knitwear-cutting-room-yield</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yzrsweaters.com/blog/knitwear-fulfilment-storage</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
